@@ -80,14 +80,6 @@ main {
     margin-right: 14px;
 }
 
-.product:first-child {
-    margin-left: 7px;
-}
-
-.product:last-child {
-    margin-right: 0;
-}
-
 .product .img-container {
     position: relative;
     width: 100%;
