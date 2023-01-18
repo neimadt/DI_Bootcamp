@@ -1,0 +1,29 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sq-yellow {
+    background-color: yellow;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        '. a1 .'
+        '. a1 .'
+        '. a1 .'
+        '. a1 .';
+    grid-row-gap: 8px;
+    grid-template-columns: auto 1fr auto;
+}
+
+
+.center-cell {
+    grid-area: a1;
+    background-color: aqua;
+}
