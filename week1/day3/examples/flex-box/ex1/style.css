@@ -1,0 +1,22 @@
+html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 25%;
+}
+
+.item {
+    background-color: azure;
+    border: 1px solid gainsboro;
+    padding: 3px 5px;
+}
