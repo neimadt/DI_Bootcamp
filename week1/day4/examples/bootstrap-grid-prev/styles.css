@@ -1,0 +1,66 @@
+body {
+    padding: 30px 0;
+    margin: 0;
+}
+
+.board-1>div {
+    background-color: gray;
+    border: 2px solid gray;
+}
+
+.board-1>div>div:first-child {
+    border-left: none;
+}
+
+.board-1>div>div {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border-left: 2px solid gray;
+}
+
+.board-2 {
+    margin-top: 30px;
+}
+
+.board-2>div {
+    display: flex;
+    justify-content: center;
+}
+
+.board-2>div .btn-wrapper {
+    background-color: lightgray;
+    border: 2px solid gray;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.board-2>div .btn-wrapper button {
+    border-radius: 50%;
+    background-color: red;
+    outline: none;
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    color: white;
+    font-weight: bold;
+    transition: all ease-in-out 200ms;
+}
+
+.board-2>div .btn-wrapper button:hover {
+    background-color: rgb(255, 69, 69);
+}
+
+.board-2>div .btn-wrapper button:focus {
+    border: 2px solid rgb(255, 169, 169);
+}
+
+.board-2>div .btn-wrapper button:active {
+    border: 2px solid red;
+    transform: scale(0.95);
+}

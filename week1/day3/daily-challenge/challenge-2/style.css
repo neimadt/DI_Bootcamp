@@ -15,7 +15,7 @@ body {
     grid-gap: 2px;
 }
 
-.board-1 div {
+.board-1>div {
     background: brown;
     display: flex;
     justify-content: center;
@@ -25,11 +25,11 @@ body {
     color: white;
 }
 
-.board-1 div:nth-child(3n + 1) {
+.board-1>div:nth-child(3n + 1) {
     background: orange;
 }
 
-.board-1 div:nth-child(3n + 2) {
+.board-1>div:nth-child(3n + 2) {
     background: coral;
 }
 
