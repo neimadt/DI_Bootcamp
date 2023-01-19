@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     gap: 20px;
 }
+
 p {
     margin-bottom: 0;
 }
@@ -30,4 +31,14 @@ p {
 
 .my-alert {
     width: 300px;
+}
+
+.btn-submit {
+    width: 100%;
+}
+
+.btn-submit svg {
+    width: 25px;
+    width: 25px;
+    margin-right: 10px;
 }
