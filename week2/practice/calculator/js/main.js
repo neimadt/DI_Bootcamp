@@ -23,7 +23,7 @@ function getCommandValue() {
 
     lastCommand = '';
 
-    const result = commands.reduce((reduced, value) => {
+    const result = commands.reduce(function (reduced, value) {
 
         switch (value) {
 
@@ -81,50 +81,52 @@ setCommand();
 const buttons = document.querySelectorAll('.btn');
 
 
-buttons.forEach(btn => {
+function onButtonClick(e) {
 
-    btn.addEventListener('click', function (e) {
+    const value = e.target.innerHTML;
 
-        const value = e.target.innerHTML;
+    switch (value.toLowerCase()) {
 
-        switch (value.toLowerCase()) {
+        case 'x':
+        case '/':
+        case '+':
+        case '-': {
+            commands.push(currentNum);
+            commands.push(value);
+            currentNum = '';
 
-            case 'x':
-            case '/':
-            case '+':
-            case '-': {
-                commands.push(currentNum);
-                commands.push(value);
-                currentNum = '';
+            displayList.push('<span style="font-size: calc(var(--display-font-size) * 0.7); padding: 0 20px;">' + value + '</span>')
+        } break;
 
-                displayList.push('<span style="font-size: calc(var(--display-font-size) * 0.7); padding: 0 20px;">' + value + '</span>')
-            } break;
+        case '=': {
+            commands.push(currentNum);
 
-            case '=': {
-                commands.push(currentNum);
+            displayList.length = 0;
 
-                displayList.length = 0;
+            const result = getCommandValue();
+            currentNum = `${result}`;
+            displayList.push(currentNum);
+            commands.length = 0;
+            commands.push(currentNum);
+        } break;
 
-                const result = getCommandValue();
-                currentNum = `${result}`;
-                displayList.push(currentNum);
-                commands.length = 0;
-                commands.push(currentNum);
-            } break;
+        case 'clear': {
 
-            case 'clear': {
+            currentNum = '';
+            commands.length = 0;
+            displayList.length = 0;
+        } break;
 
-                currentNum = '';
-                commands.length = 0;
-                displayList.length = 0;
-            } break;
+        default: {
+            currentNum += value;
+            displayList.push(value);
+        } break;
+    }
 
-            default: {
-                currentNum += value;
-                displayList.push(value);
-            } break;
-        }
+    setCommand();
+}
 
-        setCommand();
-    });
+buttons.forEach(function (btn) {
+
+    btn.addEventListener('click', onButtonClick);
 });
