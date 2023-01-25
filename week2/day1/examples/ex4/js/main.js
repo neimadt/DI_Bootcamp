@@ -44,5 +44,7 @@ const sorteds = numberArray.reduce((sorted, value, i) => {
     return sorted;
 }, []);
 
-console.log(sorteds)
-console.log(numberArray)
+console.log(sorteds);
+console.log(numberArray);
+
+console.log();
