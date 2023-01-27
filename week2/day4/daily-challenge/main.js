@@ -1,5 +1,5 @@
 
-const str = 'Hello, World, in, a, frame';// prompt();
+const str = 'Helloooooo, World, in, a, frame'; // prompt(); //
 
 const frameString = value => {
 
@@ -19,10 +19,15 @@ const frameString = value => {
         return reduced;
     }, []);
 
-    topAndBottomLine = ''.padEnd(maxLenString + 2, '*');
+    const topAndBottomLine = '*'.repeat(maxLenString + 2); //''.padEnd(maxLenString + 2, '*');
 
+    console.log(maxLenString)
+    console.log(topAndBottomLine)
+
+    console.log(splits)
     splits.unshift(topAndBottomLine);
     splits.push(topAndBottomLine);
+    console.log(splits)
 
     let result = '';
 
