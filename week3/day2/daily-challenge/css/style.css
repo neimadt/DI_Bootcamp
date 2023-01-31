@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10px;
+    margin: 0;
+}
+
+h1 {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 15px 25px 20px 25px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background-color: #ea4809;
+    border-radius: 2px;
+    animation: left-to-right 2s ease-in-out 0ms 1 forwards;
+}
+
+@keyframes left-to-right {
+    0% {
+        left: 0;
+        width: 200px;
+    }
+
+    50% {
+        left: calc(100% - 200px);
+        width: 200px;
+    }
+
+    100% {
+        left: 0;
+        width: 100%;
+    }
+}
+
+form {
+    display: grid;
+    grid-template-columns: minmax(170px, 1fr) 3fr;
+    row-gap: 5px;
+    padding: 20px 10px;
+    background-color: #ea4809;
+    border-radius: 15px;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+form input {
+    height: 30px;
+    font-size: 17px;
+    border-radius: 3px;
+    outline: none;
+    border: 2px solid rgba(211, 211, 211, 0.5);
+    padding: 0 5px;
+    transition: border-color ease-in-out 300ms;
+}
+
+form input:hover {
+    border-color: #f0f069;
+}
+
+form input:focus {
+    border-color: #00cfe259;
+}
+
+form button {
+    outline: none;
+    cursor: pointer;
+    grid-column: 2;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px 0 0 0;
+    height: 50px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 4px solid white;
+    border-radius: 50px;
+    transition: all ease-in-out 200ms;
+}
+
+form button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form button:focus {
+    box-shadow: 0 0 0 3px #ea4809, 0 0 0 5px #00cfe2;
+}
+
+form button:active {
+    box-shadow: 0 0 0 1px #ea4809, 0 0 0 3px #00cfe2;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(.98);
+}
+
+p {
+    position: relative;
+    margin: 0;
+    padding: 70px 0 20px 0;
+}
+
+p::before,
+p::after,
+p span::before {
+    content: '';
+    position: absolute;
+    border: 3px solid lightgray;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+p::before {
+    right: 60px;
+    top: 35px;
+    height: 15px;
+    width: 15px;
+}
+
+p::after {
+    right: 75px;
+    top: 18px;
+    height: 10px;
+    width: 10px;
+}
+
+p span::before {
+    right: 35px;
+    top: 45px;
+    height: 18px;
+    width: 18px;
+}
+
+p span::after {
+    content: 'Generated Story';
+    position: absolute;
+    font-weight: bold;
+    top: 52px;
+    left: 10px;
+    color: gray;
+}
+
+p span {
+    display: block;
+    padding: 10px 15px;
+    border: 4px solid rgba(211, 211, 211, 0.5);
+    margin-top: 3px;
+    border-radius: 15px;
+    min-height: 50px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    color: #636363;
+}
+
+p b {
+    color: gray;
+    padding-left: 10px;
+}

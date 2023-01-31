@@ -1,0 +1,8 @@
+table th {
+    text-transform: capitalize;
+}
+
+table img {
+    width: 100px;
+    height: auto;
+}
