@@ -27,6 +27,9 @@ const display = values => {
 
 const getValues = () => {
 
+    const fdata = new FormData(form);
+    const data = { ...fdata };
+
     const { value: nounValue } = nounElement;
     const { value: adjectiveValue } = adjectiveElement;
     const { value: personValue } = personElement;
