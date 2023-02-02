@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: #434343;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+}
+
+.side-menu {
+    min-width: 100px;
+    height: 100%;
+    padding: 8px 0 8px 8px;
+    display: grid;
+    grid-template-rows: 40px 40px repeat(7, auto);
+    grid-template-columns: auto auto auto;
+}
+
+.side-menu button:not(.color-palette) {
+    height: 35px;
+    border-radius: 50px;
+    grid-column: 1 / span 3;
+}
+
+.side-menu .color-palette {
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    margin: 1px;
+    border: 1px solid black;
+    outline: transparent;
+    border-radius: 2px;
+    transition: all ease-in-out 200ms;
+}
+
+.side-menu .color-palette.active {
+    border-radius: 50%;
+}
+
+.side-menu .color-palette:focus {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.side-menu .color-palette:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+.side-menu .color-palette:active {
+    transform: scale(0.97);
+}
+
+.drawing-board {
+    flex-grow: 1;
+    height: 100%;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+}
+
+.drawing-board>div {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.drawing-board.show-grid>div {
+    border: 1px solid #434343;
+}
