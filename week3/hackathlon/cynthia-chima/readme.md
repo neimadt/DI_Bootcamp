@@ -6,7 +6,10 @@ https://github.com/Soobhug/DI_Bootcamp
 
 
 ## COMMENTS ##
+- NO GIT Sub Branches
+- No responsiveness or media queries
 - Functions 'setAlarmTime' & 'setAlarm' are set in a sub scope of the setInterval, thus are RE-declared on every execution of the interval.
 - Also functions 'setAlarmTime' & 'setAlarm' are executed directly after declaration.
 - In the html file element '<input onchange="SetAlarmTime(this.value)" name="alarmTime" type="datetime-local">' binds the onchange event to the 'SetAlarmTime' function with an uppercase 'S' which doesn't exists.
 - The alarm timeout should be cleared before setting it up again: 'clearTimeout(alarmTimeout)'
+- Great job !

@@ -15,3 +15,4 @@ https://github.com/tushilkumar/hackathon
 - Same when flipping from Today to Week, Week to Today or Temperatures Unit of measure
 - Invalid folder structure. In the code you're looking for icons in the 'icon' folder which doesn't exists, same for the 'image' folder.
 - No responsiveness or media queries used
+- Great job !
