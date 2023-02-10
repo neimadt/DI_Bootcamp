@@ -1,0 +1,88 @@
+:root {
+    --navbar-height: 60px;
+}
+
+body {
+    margin: 0;
+    padding-top: var(--navbar-height);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--navbar-height);
+    background-color: whitesmoke;
+    z-index: 10;
+    padding: 0 20px 0 20px;
+}
+
+nav .menu-brand {
+    float: left;
+}
+
+nav .menu-item {
+    float: right;
+}
+
+
+section.landing_pg {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - var(--navbar-height));
+    background-image: url("logo.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: whitesmoke;
+}
+
+.active {
+    background-color: whitesmoke;
+}
+
+#back {
+    border: 2px solid whitesmoke;
+    padding: 25px;
+    background: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+div.absolute {
+    position: absolute;
+    /* top: 0; */
+    bottom: 20px;
+    left: 15px;
+
+}

@@ -1,0 +1,238 @@
+
+body{
+   @media only screen and (max-width: 768px) {
+
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+ 
+
+}
+
+.grid > article {
+  border: 1px solid rgb(118, 63, 63);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+ background-color: #fff8fa;
+  border-radius: 15px;
+}
+
+
+img {
+  border-radius: 20px;
+  height: 300px;
+  
+}
+
+.grid .text {
+  padding: 20px;
+  text-align: center;
+}
+h3{
+  color:rgb(222, 178, 178);
+  font-size: 58px;
+  font-weight: 300;
+  line-height: 62px;
+  letter-spacing: 0.01em;
+  word-spacing: 0.15em;
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+.grid .text h3 {
+  font-size: 1.4rem;
+  font-family: 'Fredoka One', cursive;
+}
+
+.grid .text p {
+  font-size: 0.9rem;
+}
+
+.grid .text p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(222, 178, 178);
+  font-family: 'Courgette', cursive;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn{
+background: #ee9ca7;  
+background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  
+background: linear-gradient(to right, #ffdde1, #ee9ca7); 
+
+  border: 1px solid rgb(180, 153, 153);
+}
+
+
+.big-texts {
+  color:#a4133c;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+
+/*-----------------------
+----- Typo Styles ------
+-------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 100;
+}
+.lead{
+  text-transform: uppercase;
+}
+
+.big-text {
+  font-size: 58px;
+  font-weight: 300;
+  line-height: 62px;
+  letter-spacing: 0.01em;
+  word-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-top: -20px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+/*-----------------------
+----- Layout Styles -----
+-------------------------*/
+
+.add-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+
+/*----------------------
+----- Contact Styles ----
+------------------------*/
+
+
+#contact-form .form-group label {
+  display: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+#contact-form.no-placeholder .form-group label {
+  display: block;
+
+}
+
+#contact-form .controls {
+  padding: 0;
+  margin-bottom: 30px;
+  border: 1px solid rgb(143, 50, 50);
+  border-radius: 4px;
+}
+
+#contact-form .form-control {
+  background: transparent !important;
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  height: 56px;
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: 100;
+  padding-left: 64px;
+  border-radius: 2px;
+}
+
+#contact-form .form-group {
+  position: relative;
+}
+
+#contact-form .form-group [class*=fa] {
+  display: block;
+  width: 64px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: #a4133c;
+  font-size: 24px;
+  line-height: 53px;
+  text-align: center;
+  font-weight: 300;
+  opacity: 0.5;
+  transition: opacity .2s ease-out;
+}
+
+#contact-form.no-placeholder .form-group [class*=fa] {
+  top: 30px;
+}
+
+#contact-form .form-control:focus+[class*=fa] {
+  opacity: 1;
+}
+
+#contact-form textarea.form-control {
+  height: auto;
+  max-width: 100%;
+  min-width: 100%;
+  font-size: 21px;
+  line-height: 32px;
+  padding-top: 10px;
+}
+
+
+#contact-form .error-message {
+  padding: 5px 0;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ff0000;
+  z-index: 10;
+}
+
+#contact-form .error-message:before {
+  content: "\00d7";
+  font-size: 21px;
+  line-height: 21px;
+  margin-right: 5px;
+}
+.big-text{
+  color:#a4133c;
+  font-size: 35px;
+}
+.text-center {
+  color: #a4133c;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+p{
+  color: #6d6d6d;
+  font-size:15px;
+  text-transform: lowercase;
+}
