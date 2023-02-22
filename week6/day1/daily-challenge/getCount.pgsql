@@ -1,0 +1,4 @@
+SELECT
+    COUNT(*)
+from
+    actors;
